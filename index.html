@@ -18,10 +18,11 @@
     <header>
       <nav class="navbar">
         <div class="logo-container">
-          <a href="index.html"
-            ><img src="https://picsum.photos/200" class="logo" alt="Travel Agent Logo"
-          /></a>
+          <a href="index.html"><img src="https://picsum.photos/200" class="logo" alt="Travel Agent Logo" /></a>
         </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
         <ul class="links-container">
           <li class="link-item"><a href="travel.html">Travel</a></li>
           <li class="link-item"><a href="explore.html">Explore</a></li>
@@ -43,20 +44,25 @@
     <main>
       <section id="travel">
         <h2>Travel Packages</h2>
-        <div class="filter-container">
-          <select id="filter-destination">
-            <option value="all">All Destinations</option>
+        <div class="filter">
+          <label for="destination-filter">Destinasi:</label>
+          <select id="destination-filter">
+            <option value="all">Semua</option>
             <option value="bali">Bali</option>
-            <option value="java">Java</option>
+            <option value="jawa">Jawa</option>
             <option value="sumatra">Sumatra</option>
+            <option value="kalimantan">Kalimantan</option>
+            <option value="sulawesi">Sulawesi</option>
+            <option value="papua">Papua</option>
           </select>
-          <select id="filter-price">
-            <option value="all">All Prices</option>
-            <option value="low">Under Rp 1.000.000</option>
-            <option value="medium">Rp 1.000.000 - Rp 2.000.000</option>
-            <option value="high">Above Rp 2.000.000</option>
+      
+          <label for="price-filter">Harga:</label>
+          <select id="price-filter">
+            <option value="all">Semua</option>
+            <option value="low">1 juta - 3 juta</option>
+            <option value="medium">3 juta - 5 juta</option>
+            <option value="high">5 juta ke atas</option>
           </select>
-          <button onclick="filterPackages()">Filter</button>
         </div>
         <section id="packages">
             <div class="package-grid">
@@ -66,9 +72,9 @@
                 <p>Destinasi: Tanah Lot, Kawasan Pantai Seminyak, Tirta Empul, Beachwalk Mall, Trans Studio Bali</p>
                 <p>Harga: Rp 3.500.000</p>
               </div>
-              <div class="package-item" data-destination="java" data-price="medium">
+              <div class="package-item" data-destination="jawa" data-price="medium">
                 <img src="https://picsum.photos/200" alt="Package 2" />
-                <h3>Package 2 - Java</h3>
+                <h3>Package 2 - Jawa</h3>
                 <p>Destinasi: Candi Borobudur, Candi Prambanan, Monumen Nasional, Taman Mini Indonesia, Kebun Raya Bogor</p>
                 <p>Harga: Rp 2.200.000</p>
               </div>

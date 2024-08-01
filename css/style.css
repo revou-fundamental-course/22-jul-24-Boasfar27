@@ -22,6 +22,7 @@ body {
     height: auto;
     display: block;
   }
+
   
   /* Header Styles */
   header {
@@ -440,4 +441,77 @@ footer {
   .social-icon:hover {
     color: #76b852; /* Warna hover yang sesuai dengan header */
   }
+
+/* filter package */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter label {
+  margin-right: 10px;
+}
+
+.filter select {
+  margin-right: 20px;
+}
+
+  /* responsif */
   
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+  display: none; /* Hide by default */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.menu-toggle i {
+  font-size: 1.5rem;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-container {
+  display: flex;
+  gap: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .links-container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #1e3c72;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 0;
+    z-index: 1;
+  }
+
+  .links-container.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Media query for devices larger than mobile */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
