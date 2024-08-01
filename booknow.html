@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Now - Travel Agent Indonesia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/booknow.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="index.html"
+            ><img src="https://picsum.photos/200" class="logo" alt="Travel Agent Logo"
+          /></a>
+        </div>
+        <ul class="links-container">
+          <li class="link-item"><a href="travel.html">Travel</a></li>
+          <li class="link-item"><a href="explore.html">Explore</a></li>
+          <li class="link-item"><a href="services.html">Services</a></li>
+          <li class="link-item"><a href="booknow.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="booknow">
+        <h2>Book Now</h2>
+        <p>Pesan Sekarang dan Wujudkan Liburan Impian Anda!</p>
+        <p>
+          Jangan lewatkan kesempatan untuk menjelajahi keindahan Indonesia yang
+          menakjubkan. Pesan paket wisata, tiket pesawat, atau hotel impian Anda
+          sekarang juga!
+        </p>
+        <h3>Mengapa Memesan Sekarang?</h3>
+        <ul>
+          <li>
+            Ketersediaan Terbatas: Destinasi populer cepat terisi, terutama saat
+            musim liburan. Pesan sekarang untuk mengamankan tempat Anda!
+          </li>
+          <li>
+            Penawaran Spesial: Dapatkan harga terbaik dan promo eksklusif dengan
+            memesan lebih awal.
+          </li>
+          <li>
+            Perencanaan Lebih Matang: Dengan memesan sekarang, Anda memiliki
+            lebih banyak waktu untuk mempersiapkan perjalanan Anda dengan
+            sempurna.
+          </li>
+        </ul>
+        <p>Jangan Tunggu Lagi!</p>
+        <p>
+          Isi formulir pemesanan di bawah ini atau hubungi tim layanan pelanggan
+          kami yang ramah untuk informasi lebih lanjut. Liburan impian Anda
+          hanya beberapa klik saja!
+        </p>
+
+        <div class="form-wrapper">
+          <div class="form-left">
+            <form id="form-left">
+              <label for="name">Nama Lengkap:</label>
+              <input
+                type="text"
+                placeholder="Nama Lengkap"
+                id="name"
+                required
+              />
+
+              <label for="email">Alamat Email:</label>
+              <input
+                type="email"
+                placeholder="Alamat Email"
+                id="email"
+                required
+              />
+
+              <label for="phone">Nomor Telepon:</label>
+              <input
+                type="tel"
+                placeholder="Nomor Telepon"
+                id="phone"
+                required
+              />
+
+              <label for="departure-date">Tanggal Keberangkatan:</label>
+              <input type="date" id="departure-date" required />
+            </form>
+          </div>
+
+          <div class="form-right">
+            <form id="form-right">
+              <label for="passengers">Jumlah Penumpang:</label>
+              <input
+                type="number"
+                placeholder="Jumlah Penumpang"
+                id="passengers"
+                required
+              />
+              <label for="booking-date">Tanggal Booking:</label>
+              <input type="date" id="booking-date" required />
+
+              <label for="destination">Destinasi Pilihan:</label>
+              <select id="destination" required>
+                <option value="" disabled selected>Destinasi Pilihan</option>
+                <option value="bali">Bali</option>
+                <option value="java">Java</option>
+                <option value="sumatra">Sumatra</option>
+                <option value="kalimantan">Kalimantan</option>
+                <option value="sulawesi">Sulawesi</option>
+                <option value="papua">Papua</option>
+              </select>
+
+              <label for="service-type">Jenis Layanan:</label>
+              <select id="service-type" required>
+                <option value="" disabled selected>Jenis Layanan</option>
+                <option value="tour">Paket Wisata</option>
+                <option value="flight">Tiket Pesawat</option>
+                <option value="hotel">Hotel</option>
+              </select>
+
+              <label for="payment-method">Metode Pembayaran:</label>
+              <select id="payment-method" required>
+                <option value="" disabled selected>
+                  Pilih Metode Pembayaran
+                </option>
+                <option value="credit-card">Kartu Kredit</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Transfer Bank</option>
+              </select>
+
+              <button type="submit">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+          <h2>Follow Us</h2>
+          <ul>
+            <li>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/farhaaan____/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <p>&copy; 2024 Travel Agent</p>
+      </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

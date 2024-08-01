@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agent Indonesia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="index.html"
+            ><img src="https://picsum.photos/200" class="logo" alt="Travel Agent Logo"
+          /></a>
+        </div>
+        <ul class="links-container">
+          <li class="link-item"><a href="travel.html">Travel</a></li>
+          <li class="link-item"><a href="explore.html">Explore</a></li>
+          <li class="link-item"><a href="services.html">Services</a></li>
+          <li class="link-item"><a href="booknow.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="banner">
+      <h1>Welcome to Travel Agent Indonesia</h1>
+      <p>Explore the beauty of Indonesia with us</p>
+      <div>
+        <a href="booknow.html">
+          <button class="explore-btn">Explore Now</button>
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <section id="travel">
+        <h2>Travel Packages</h2>
+        <div class="filter-container">
+          <select id="filter-destination">
+            <option value="all">All Destinations</option>
+            <option value="bali">Bali</option>
+            <option value="java">Java</option>
+            <option value="sumatra">Sumatra</option>
+          </select>
+          <select id="filter-price">
+            <option value="all">All Prices</option>
+            <option value="low">Under Rp 1.000.000</option>
+            <option value="medium">Rp 1.000.000 - Rp 2.000.000</option>
+            <option value="high">Above Rp 2.000.000</option>
+          </select>
+          <button onclick="filterPackages()">Filter</button>
+        </div>
+        <section id="packages">
+            <div class="package-grid">
+              <div class="package-item" data-destination="bali" data-price="high">
+                <img src="https://picsum.photos/200" alt="Package 1" />
+                <h3>Package 1 - Bali</h3>
+                <p>Destinasi: Tanah Lot, Kawasan Pantai Seminyak, Tirta Empul, Beachwalk Mall, Trans Studio Bali</p>
+                <p>Harga: Rp 3.500.000</p>
+              </div>
+              <div class="package-item" data-destination="java" data-price="medium">
+                <img src="https://picsum.photos/200" alt="Package 2" />
+                <h3>Package 2 - Java</h3>
+                <p>Destinasi: Candi Borobudur, Candi Prambanan, Monumen Nasional, Taman Mini Indonesia, Kebun Raya Bogor</p>
+                <p>Harga: Rp 2.200.000</p>
+              </div>
+              <div class="package-item" data-destination="sumatra" data-price="high">
+                <img src="https://picsum.photos/200" alt="Package 3" />
+                <h3>Package 3 - Sumatra</h3>
+                <p>Destinasi: Ampera Bridge, Istana Pagaruyung, Mesjid Raya Baiturrahman, Graha Bunda Maria Annai Velangkanni, Jam Gadang Bukittinggi</p>
+                <p>Harga: Rp 4.500.000</p>
+              </div>
+              <div class="package-item" data-destination="kalimantan" data-price="medium">
+                <img src="https://picsum.photos/200" alt="Package 4" />
+                <h3>Package 4 - Kalimantan</h3>
+                <p>Destinasi: Taman Hutan Rakyat Sultan Adam, Jembatan Gantung Desa Nateh, Goa Batu Hapu, Danau Biru Pengaron, Taman Siring Laut</p>
+                <p>Harga: Rp 2.800.000</p>
+              </div>
+              <div class="package-item" data-destination="sulawesi" data-price="medium">
+                <img src="https://picsum.photos/200" alt="Package 5" />
+                <h3>Package 5 - Sulawesi</h3>
+                <p>Destinasi: Benteng Somba Opu, Fort Rotterdam, Pallawa, Londa, Batutumonga</p>
+                <p>Harga: Rp 2.500.000</p>
+              </div>
+              <div class="package-item" data-destination="papua" data-price="high">
+                <img src="https://picsum.photos/200" alt="Package 6" />
+                <h3>Package 6 - Papua</h3>
+                <p>Destinasi: Taman Nasional Wasur, Taman Nasional Lorentz, Lembah Baliem, Air Terjun Wafsarak, Raja Ampat</p>
+                <p>Harga: Rp 6.800.000</p>
+              </div>
+            </div>
+          </section>
+          
+
+      <section id="explore-section">
+        <h2>Explore Indonesia</h2>
+        <div class="form-wrapper">
+          <div class="form-left">
+            <form id="form-left">
+              <label for="name">Nama Lengkap:</label>
+              <input
+                type="text"
+                placeholder="Nama Lengkap"
+                id="name"
+                required
+              />
+
+              <label for="email">Alamat Email:</label>
+              <input
+                type="email"
+                placeholder="Alamat Email"
+                id="email"
+                required
+              />
+
+              <label for="phone">Nomor Telepon:</label>
+              <input
+                type="tel"
+                placeholder="Nomor Telepon"
+                id="phone"
+                required
+              />
+
+              <label for="departure-date">Tanggal Keberangkatan:</label>
+              <input type="date" id="departure-date" required />
+            </form>
+          </div>
+
+          <div class="form-right">
+            <form id="form-right">
+              <label for="passengers">Jumlah Penumpang:</label>
+              <input
+                type="number"
+                placeholder="Jumlah Penumpang"
+                id="passengers"
+                required
+              />
+              <label for="booking-date">Tanggal Booking:</label>
+              <input type="date" id="booking-date" required />
+
+              <label for="destination">Destinasi Pilihan:</label>
+              <select id="destination" required>
+                <option value="" disabled selected>Destinasi Pilihan</option>
+                <option value="bali">Bali</option>
+                <option value="java">Java</option>
+                <option value="sumatra">Sumatra</option>
+                <option value="kalimantan">Kalimantan</option>
+                <option value="sulawesi">Sulawesi</option>
+                <option value="papua">Papua</option>
+              </select>
+
+              <label for="service-type">Jenis Layanan:</label>
+              <select id="service-type" required>
+                <option value="" disabled selected>Jenis Layanan</option>
+                <option value="tour">Paket Wisata</option>
+                <option value="flight">Tiket Pesawat</option>
+                <option value="hotel">Hotel</option>
+              </select>
+
+              <label for="payment-method">Metode Pembayaran:</label>
+              <select id="payment-method" required>
+                <option value="" disabled selected>
+                  Pilih Metode Pembayaran
+                </option>
+                <option value="credit-card">Kartu Kredit</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Transfer Bank</option>
+              </select>
+
+              <button type="submit">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-media">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/farhaaan____/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p>&copy; 2024 Travel Agent</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
